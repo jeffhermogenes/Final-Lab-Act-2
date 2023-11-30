@@ -19,6 +19,7 @@
                             <th scope="col">Category Name</th>
                             <th scope="col">User ID</th>
                             <th scope="col">Created At</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,6 +29,10 @@
                                 <td>{{ $category->cat_name }}</td>
                                 <td>{{ $category->user_id }}</td>
                                 <td>{{ $category->created_at }}</td>
+                                <td>
+                                    <a href=""class="btn btn-info">Update</a>
+                                    <a href=""class="btn btn-danger">Delete</a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
